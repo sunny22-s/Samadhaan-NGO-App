@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Modal popup -->
+<div class="modal" id="myModal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Volunteer Application</h3>
+        <p>Fill out the form below to apply as a volunteer:</p>
+        <a href="volunteer_application.html" class="cta-btn">Volunteer Now</a>
+
+        <!-- Add your volunteer application form here -->
+    </div>
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer with Us - Samadhan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+
+<body>
+    <header>
+        <h1>Volunteer with Us</h1>
+    </header>
+
+    <section id="volunteer-stories" class="slideshow-container">
+        <h2>Volunteer Stories</h2>
+        <div class="mySlides fade">
+            <img src="vol2.jpg" style="width:100%; height: auto;">
+            <div class="text">Volunteer Story 1</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="vol20.webp" style="width:100%; height: auto;">
+            <div class="text">Volunteer Story 2</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="vol6.jpeg" style="width:100%; height: auto;">
+            <div class="text">Volunteer Story 3</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="vol21.jpg" style="width:100%; height: auto;">
+            <div class="text">Volunteer Story 4</div>
+        </div>
+
+        <!-- Add more slides as needed -->
+        <div class="mySlides fade">
+            <img src="vol23.jpg" style="width:100%; height: auto;">
+            <div class="text">Volunteer Story 5</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="vol24.jpg" style="width:100%; height: auto;">
+            <div class="text">Volunteer Story 6</div>
+        </div>
+
+        <!-- Add more slides as needed -->
+
+        <!-- Navigation arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+
+        <!-- Add more dots as needed -->
+    </div>
+    <section id="our-mission">
+        <div class="mission-container">
+            <h2>Our Mission</h2>
+            <p>Lorem ipsum is a dummy text it will use for subtitle here</p>
+        </div>
+    </section>
+    <title>Chat Box</title>
+    <link rel="stylesheet" href="bot.css">
+    <!-- Chat Box -->
+    <div id="chat-tab" onclick="toggleChatBox()">
+        <div id="chat-tab-icon">Chat</div>
+    </div>
+
+    <!-- Chat Box -->
+    <div id="chat-popup">
+        <div id="chat-header">Chat</div>
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Hiiiii!  How can i help you????">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <section id="missions">
+        <div id="chat-popup">
+            <div id="chat-header">Chat</div>
+            <div id="chat-box"></div>
+            <input type="text" id="user-input" placeholder="Hiiiii!  How can i help you????">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        <div class="mission-row">
+            <div class="mission-item">
+                <h3>Charity For Education</h3>
+                <p>There are many variations of lorem passagei of Lorem Ipsum available but the majority have</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="mission-item">
+                <h3>Feed For Hungry Child</h3>
+                <p>There are many variations of lorem passagei of Lorem Ipsum available but the majority have</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="mission-item">
+                <h3>Home For Homeless</h3>
+                <p>There are many variations of lorem passagei of Lorem Ipsum available but the majority have</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="mission-row">
+            <div class="mission-item">
+                <h3>Charity For Education</h3>
+                <p>There are many variations of lorem passagei of Lorem Ipsum available but the majority have</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="mission-item">
+                <h3>Feed For Hungry Child</h3>
+                <p>There are many variations of lorem passagei of Lorem Ipsum available but the majority have</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="mission-item">
+                <h3>Home For Homeless</h3>
+                <p>There are many variations of lorem passagei of Lorem Ipsum available but the majority have</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="container">
+
+        <section id="ways-to-volunteer">
+            <h2>Ways to Volunteer</h2>
+            <div class="volunteer-options">
+                <div class="volunteer-option">
+                    <img src="vol2.jpg" alt="Food Distribution">
+                    <h3>Food Distribution</h3>
+                    <p class="description">Join us for our monthly food distribution event and help us feed those in
+                        need.</p>
+                </div>
+                <div class="volunteer-option">
+                    <img src="vol3.jpg" alt="Administrative Support">
+                    <h3>Administrative Support</h3>
+                    <p class="description">Help us with administrative tasks and support our team in making a
+                        difference.</p>
+                </div>
+                <div class="volunteer-option">
+                    <img src="vol4.jpg" alt="Special Events">
+                    <h3>Special Events</h3>
+                    <p class="description">Join us for special events and help us make a difference in the
+                        community.
+                    </p>
+                </div>
+                <div class="volunteer-option">
+                    <img src="vol8.jpeg" alt="Social Media Advertising">
+                    <h3>Social Media Advertising</h3>
+                    <p class="description">Help us reach a wider audience by promoting our events and initiatives on
+                        social media platforms.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="hero">
+            <div class="hero-content">
+                <form action="/register" method="post">
+
+                    <h2>Make a Difference in Your Community</h2>
+                    <p>Join our team of dedicated volunteers and help us make a difference in the lives of those in
+                        need.
+                    </p>
+                    <a href="volunteer_application.html" class="cta-btn">Volunteer Now</a>
+                </form>
+
+            </div>
+            <div class="hero-background"></div> <!-- Add a background element for effects -->
+            <div class="hero-overlay"></div> <!-- Add an overlay for background effect -->
+        </section>
+
+
+
+        <section id="upcoming-events" class="upcoming-events">
+            <h2>Upcoming Volunteer Opportunities</h2>
+            <div class="event-cards">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="icon">📅</span>
+                        <time datetime="2023-03-05">05 Mar 2023</time>
+                    </div>
+                    <h3>Food Distribution</h3>
+                    <p>Join us for our monthly food distribution event and help us feed those in need.</p>
+                    <div class="button-container">
+
+                        <button class="cta-btn definitely-coming"
+                            onclick="showDetails('EventLocation1', 'EventTime1')">Definitely
+                            Coming</button>
+                        <button class="cta-btn maybe-next-time" onclick="maybeNextTime()">Maybe Next Time</button>
+                    </div>
+
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="icon">📅</span>
+                        <time datetime="2023-03-12">12 Mar 2023</time>
+                    </div>
+                    <h3>Special Event</h3>
+                    <p>Join us for a special event and help us make a difference in the community.</p>
+                    <div class="button-container">
+
+                        <button class="cta-btn definitely-coming"
+                            onclick="showDetails('EventLocation2', 'EventTime2')">Definitely
+                            Coming</button>
+                        <button class="cta-btn maybe-next-time" onclick="maybeNextTime()">Maybe Next Time</button>
+                    </div>
+
+                </div>
+                <!-- Add more event cards -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="icon">📅</span>
+                        <time datetime="2023-03-18">18 Mar 2023</time>
+                    </div>
+                    <h3>Community Cleanup</h3>
+                    <p>Join us for a community cleanup event and help beautify our neighborhood.</p>
+                    <div class="button-container">
+
+                        <button class="cta-btn definitely-coming"
+                            onclick="showDetails('EventLocation3', 'EventTime3')">Definitely
+                            Coming</button>
+                        <button class="cta-btn maybe-next-time" onclick="maybeNextTime()">Maybe Next Time</button>
+                    </div>
+
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="icon">📅</span>
+                        <time datetime="2023-03-25">25 Mar 2023</time>
+                    </div>
+                    <h3>Children's Education Workshop</h3>
+                    <p>Participate in an educational workshop for children and help inspire young minds.</p>
+                    <div class="button-container">
+
+                        <button class="cta-btn definitely-coming"
+                            onclick="showDetails('EventLocation4', 'EventTime4')">Definitely
+                            Coming</button>
+                        <button class="cta-btn maybe-next-time" onclick="maybeNextTime()">Maybe Next Time</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="corporate-engagement" class="corporate-engagement">
+            <div class="corporate-engagement-content">
+                <h2>Corporate Engagement</h2>
+                <p>Creating strong partnerships within the communities of Eastern Massachusetts is vital to our
+                    mission.
+                    These partnerships enable us to amplify our impact and reach more individuals in need. By
+                    collaborating with corporations, we can work together to address social challenges and create
+                    meaningful change in our communities.</p>
+                <a href="partnerships.html" class="cta-btn">Learn More</a>
+            </div>
+            <div class="corporate-engagement-overlay"></div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>About Us</h3>
+                    <p>Samadhan is a non-profit organization dedicated to providing assistance to those in need.
+                        Through
+                        our various projects and initiatives, we aim to make a positive impact in communities across
+                        the
+                        globe.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Centres</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-address">
+                        <h3>Physical Address</h3>
+                        <p>123 Main Street<br>City, State ZIP<br>Country</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Samadhan. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="send.js"></script>
+        <script src="script.js"></script>
+
+</body>
+
+</html>

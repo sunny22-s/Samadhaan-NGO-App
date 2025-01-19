@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registration</title>
+</head>
+
+<body>
+    <h1>Volunteer Registration</h1>
+    <form id="availabilityForm" action="/submit_availability" method="post">
+        <label for="availability">Are you available to attend social events?</label><br>
+        <select id="availability" name="availability">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <div id="availabilityDetails" style="display:none;">
+            <label for="availability_dates">Please specify your availability:</label><br>
+            <input type="text" id="availability_dates" name="availability_dates"><br><br>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('availability').addEventListener('change', function () {
+            var availability = this.value;
+            if (availability === 'yes') {
+                document.getElementById('availabilityDetails').style.display = 'block';
+            } else {
+                document.getElementById('availabilityDetails').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

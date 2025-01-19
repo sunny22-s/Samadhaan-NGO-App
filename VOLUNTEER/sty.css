@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px auto;
+    /* Adjust the margin as needed */
+    max-width: 1200px;
+    /* Set a maximum width for the content */
+    padding: 0 20px;
+    background-color: #f0f0f0;
+    /* Light gray background */
+    /* Add a background image with waterwash effect */
+    background-image: url('vol8.jpeg');
+    /* Replace 'waterwash.png' with the path to your background image */
+    background-size: cover;
+    background-blend-mode: overlay;
+    /* Blend the background image with the background color */
+}
+
+
+/* Other styles remain the same */
+header {
+    background-color: rgba(184, 32, 32, 0.726);
+    /* Use rgba for transparency */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Add a slight transparency to the background color of the header */
+nav ul li a:hover {
+    color: #666;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    /* Dark gray links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3014d3;
+    /* Slightly lighter gray on hover */
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+
+/* Volunteer section styles */
+.volunteer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.volunteer .opportunity {
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    /* White background for opportunities */
+}
+
+.volunteer .opportunity h3 {
+    margin-top: 0;
+}
+
+/* Testimonial styles */
+.testimonial {
+    border: 1px solid #b34242;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f3adad;
+    /* White background for testimonials */
+}
+
+.testimonial p {
+    margin-bottom: 10px;
+}
+
+.testimonial .author {
+    font-style: italic;
+    text-align: right;
+    color: #666;
+}
+
+/* Timeline styles */
+#timeline {
+    margin-top: 50px;
+}
+
+#timeline-container {
+    position: relative;
+    padding: 20px;
+    background-color: #772424;
+    border-radius: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.timeline-event {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    margin-right: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e78383;
+    border-radius: 5px;
+
+    overflow: hidden;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.timeline-event h4 {
+    margin-top: 0;
+}
+
+.timeline-event p {
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.timeline-event::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    transform: translateY(-50%);
+}
+
+/* Feature section */
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Align items vertically in the center */
+    margin: 50px 0;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.feature img {
+    width: 150px;
+    /* Set width as needed */
+    border-radius: 50%;
+    /* Make the image circular */
+    margin-bottom: 15px;
+}
+
+.partner-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-image {
+    width: 150px;
+    /* Set width as needed */
+    height: auto;
+    /* Automatically adjust height while maintaining aspect ratio */
+    margin: 0 10px;
+    /* Add some spacing between images */
+}
+
+.testimonial-carousel {
+    display: flex;
+    overflow-x: auto;
+    /* Ensure horizontal scrolling if testimonials overflow */
+    white-space: nowrap;
+    /* Prevent testimonials from wrapping to the next line */
+}
+
+.testimonial {
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 0 0 auto;
+    /* Prevent testimonials from growing or shrinking */
+}
+
+.testimonial p {
+    margin-bottom: 5px;
+}
+
+.testimonial .author {
+    font-style: italic;
+    color: #666;
+}
+
+
+.contact-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    /* Adjust padding */
+    background-color: #f7a8a8;
+    margin-bottom: 20px;
+    max-width: 300px;
+    /* Set maximum width */
+    margin: 0 auto;
+    /* Center horizontally */
+}
+
+.contact-box h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    /* Adjust width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    /* Adjust height */
+}
+
+.contact-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #666;
+}

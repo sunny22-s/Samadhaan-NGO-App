@@ -1,0 +1,86 @@
+#chat-tab {
+    all: unset;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 123, 255, 0.8);
+    /* Adjust the opacity here */
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+#chat-tab:hover {
+    background-color: #0056b3;
+}
+
+#chat-tab-icon {
+    font-size: 18px;
+}
+
+#chat-popup {
+    position: fixed;
+    bottom: 80px;
+    /* Adjust as needed to position the chat box */
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    /* Hide chat box by default */
+}
+
+#chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#chat-box {
+    height: 200px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+#user-input {
+    width: calc(100% - 80px);
+    /* Adjust width to leave space for button */
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #bda3a3;
+    border-radius: 3px;
+}
+
+button {
+    width: 60px;
+    padding: 8px;
+    margin: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #217ee0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chat-message {
+    margin-bottom: 5px;
+}
+
+/* Adjustments for scrollbar */
+#chat-box::-webkit-scrollbar {
+    width: 5px;
+}
+
+#chat-box::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+}

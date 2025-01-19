@@ -1,0 +1,755 @@
+/* Styles for modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    /* Ensure modal is on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+#volunteer-stories h2 {
+    display: none;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Darker semi-transparent background */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    padding: 40px 20px;
+    /* Increase padding for better spacing */
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    /* Increase font size for header */
+    letter-spacing: 2px;
+    /* Add letter spacing for better readability */
+    text-transform: uppercase;
+    /* Convert text to uppercase */
+}
+
+h1 span {
+    color: #ffd700;
+    /* Highlight part of the text with a different color */
+}
+
+h2 {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    margin-top: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+.text {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    /* Ensure content is above overlay */
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('hero-background.jpg');
+    /* Add a background image for effect */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    /* Ensure background is behind content */
+    opacity: 0.5;
+    /* Adjust opacity for background */
+    filter: blur(10px);
+    /* Apply blur effect to background */
+}
+
+/* Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+    /* Add a gradient overlay */
+    z-index: -2;
+    /* Ensure overlay is behind content and background */
+}
+
+/* Animation for hero content */
+.hero-content {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#ways-to-volunteer h2 {
+    color: #007bff;
+}
+
+#ways-to-volunteer ul li {
+    margin-bottom: 10px;
+}
+
+#ways-to-volunteer ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#ways-to-volunteer ul li a:hover {
+    text-decoration: underline;
+}
+
+#volunteer-stories {
+    margin-top: 50px;
+    background: transparent;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.story {
+    margin-bottom: 30px;
+}
+
+.story img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#upcoming-events {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+#upcoming-events h2 {
+    color: #007bff;
+}
+
+#upcoming-events ul li {
+    margin-bottom: 20px;
+}
+
+#upcoming-events time {
+    color: #007bff;
+    font-weight: bold;
+    display: block;
+}
+
+.corporate-engagement-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.corporate-engagement h2 {
+    color: #f1ebeb;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.corporate-engagement p {
+    color: #fcf9f9;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.corporate-engagement {
+    padding: 50px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.corporate-engagement .cta-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.corporate-engagement .cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.column img {
+    width: 80%;
+    height: auto;
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: 0 auto;
+    /* Center the slideshow */
+    width: 80%;
+    /* Fixed width */
+    height: 600px;
+    /* Fixed height */
+    overflow: hidden;
+    /* Hide overflowing content */
+}
+
+.mySlides {
+    display: none;
+    max-width: 100%;
+}
+
+.mySlides img {
+    height: 100%;
+    width: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.privacy-policy,
+.terms-of-service {
+    flex: 1;
+}
+
+.privacy-policy a,
+.terms-of-service a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.privacy-policy a:hover,
+.terms-of-service a:hover {
+    text-decoration: underline;
+}
+
+/* Adjust as needed for responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.description {
+    display: none;
+    /* Initially hide the description */
+    position: absolute;
+    bottom: -30px;
+    /* Adjust the distance from the image */
+    left: 0;
+    right: 0;
+    text-align: center;
+    /* Center the text */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black background */
+    border-radius: 5px;
+    color: #fff;
+    transition: bottom 0.3s ease;
+    /* Add transition effect */
+}
+
+.volunteer-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.volunteer-option {
+    flex: 0 0 calc(25% - 20px);
+    /* Adjust the width to fit four items in a row */
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+
+}
+
+.volunteer-option img {
+    width: 100%;
+    max-width: 350px;
+    /* Slightly increase the maximum width */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.volunteer-option:hover .description {
+    display: block;
+    /* Show description on hover */
+    bottom: 0;
+    /* Move the description up */
+}
+
+.volunteer-option:hover h3 {
+    color: #007bff;
+}
+
+
+.volunteer-option:hover img {
+    transform: translateY(-5px);
+}
+
+.volunteer-option:nth-child(1) h3,
+.volunteer-option:nth-child(2) h3,
+.volunteer-option:nth-child(3) h3,
+.volunteer-option:nth-child(4) h3 {
+    color: #007bff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.volunteer-option h3 {
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    transition: border-color 0.3s ease;
+}
+
+.volunteer-option:hover h3 {
+    border-color: #eceff3;
+}
+
+.upcoming-events {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.event-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-date {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Advanced styling for Corporate Engagement section */
+
+.corporate-engagement {
+    position: relative;
+    overflow: hidden;
+}
+
+.corporate-engagement-content {
+    position: relative;
+    z-index: 1;
+    /* Ensure content is above overlay */
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.corporate-engagement-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('vol12.avif');
+    /* Add a background image for overlay effect */
+    opacity: 0.5;
+    /* Adjust opacity for overlay */
+    z-index: 0;
+    /* Ensure overlay is behind content */
+    pointer-events: none;
+    /* Allow clicks to pass through overlay */
+    animation: pulse 5s infinite alternate;
+    /* Add animation effect to overlay */
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Animation for overlay */
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    width: 40%;
+}
+
+.footer-left h3 {
+    font-size: 20px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-right {
+    display: flex;
+}
+
+.footer-links,
+.footer-address {
+    margin-right: 50px;
+}
+
+.footer-links h3,
+.footer-address h3 {
+    font-size: 18px;
+}
+
+.footer-links ul {
+    padding: 0;
+}
+
+.footer-links ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-address p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.copyright p {
+    font-size: 14px;
+}
+
+#missions {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mission-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.mission-item {
+    flex: 0 0 calc(33.33% - 10px);
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission-item h3 {
+    color: #333;
+    font-size: 24px;
+    /* Increase font size */
+    font-weight: bold;
+    /* Make it bold */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.mission-item p {
+    color: #666;
+    margin-top: 10px;
+    font-size: 16px;
+    /* Adjust font size */
+    line-height: 1.5;
+    /* Increase line height for better readability */
+}
+
+.mission-item a {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    /* Make link text bold */
+    text-transform: uppercase;
+    /* Convert text to uppercase */
+    letter-spacing: 1px;
+    /* Add letter spacing */
+}
+
+.mission-item a:hover {
+    text-decoration: underline;
+}
+
+.mission-item:not(:last-child) {
+    margin-right: 10px;
+    /* Margin between each mission box */
+}
+
+.mission-item:hover {
+    transform: translateY(-5px);
+    /* Raise the box on hover */
+}
+
+.mission-item a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+    /* Darken link color on hover */
+
+}
+
+#our-mission {
+    text-align: center;
+    margin-top: 50px;
+    /* Adjust margin as needed */
+}
+
+.maybe-next-time {
+    margin-left: 10px;
+    /* Adjust as needed */
+}
+
+.button-container {
+    display: flex;
+}

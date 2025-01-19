@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+   <title>ADOPTION</title>
+   <link rel="stylesheet" href="css/ic.css">
+   <link rel="stylesheet" href="css/ss.css">
+   <link rel="icon" href="favicon.ico">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lilita+One&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Zeyada&family=Zilla+Slab&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body style="background-image: linear-gradient(to right,black , black);">
+    
+    <!-- <center><h1>ADOPTION HOUSES</h1></center>
+   <div class="bg1" style="background-image: url(https://i.pinimg.com/564x/5e/2f/8f/5e2f8f01484a7a5f93b429e7570602d2.jpg);">
+   </div> -->
+   <center>
+   <br> <br> 
+    <div class="slideshow-container">
+ 
+     <div class="imagess fade">
+         <img class="cbg" src="bg.jpg" style="width:1450px" height="700px">
+         <div class="text1">WELCOME<br> Have a look at<br> HOPE<br><br> Have a look at<br> ADOPTION HOUSES<br></div>
+     </div>
+ 
+ 
+         <div class="imagess fade">
+             <img class="dishh1" src="a1.jpg" style="width:1450px" height="700px">
+             <div><a class="linkc" href="a1.html">AASHA: HOUSE TO HOPES</a></div>
+             <div class="text2"><p class="abcc">Capacity/Availability:200/20<br> Child Age Groups: 5-15<br></p></div>
+         </div>
+ 
+         <div class="imagess fade">
+             <img class="dishh1" src="a2.jpg" style="width:1450px" height="700px">
+               <div class="text"><a class="linkc" href="a2.html">GYAANAALAYA</a></div>
+                <div class="text2"><p class="abcc">Capacity/Availability:150/9<br> Child Age Groups: 3-17<br></p></div>
+         </div>
+ 
+         <div class="imagess fade">
+             <img class="dishh1"  src="a3.jpg" style="width:1450px" height="700px">
+             <div class="text"><a class="linkc" href="a3.html">KHUSHI: INITIATIVE TO SMILE</a></div>
+                  <div class="text2"><p class="abcc">Capacity/Availability:250/30<br> Child Age Groups: 7-12<br></p></div>
+         </div>
+ 
+         <div class="imagess fade">
+             <img class="dishh1"  src="a4.jpg" style="width:1450px" height="700px">
+             <div class="text"><a class="linkc" href="a4.html">BUDDHA HOUSE OF FAITH</a></div>
+                  <div class="text2"><p class="abcc">Capacity/Availability:75/5<br> Child Age Groups: 2-20<br></p></div>
+         </div>
+ 
+         <div class="imagess fade">
+             <img class="dishh1"  src="a5.jpg" style="width:1450px" height="700px">
+             <div class="text"><a class="linkc" href="a5.html">GANDHI AASHRAM</a></div>
+                  <div class="text2"><p class="abcc">Capacity/Availability:300/73<br> Child Age Groups: 3-10<br></p></div>
+         </div>
+ 
+         <br><br>
+ 
+ 
+     <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+
+     </div>
+ 
+ 
+     <div class="prev" onclick="plusSlides(-1)"&#10094;>
+        <span class="fas fa-angle-left"></span>
+     </div>
+     <div class="next" onclick="plusSlides(1)"&#10094;>
+        <span class="fas fa-angle-right"></span>
+     </div>
+ 
+  </div>
+  <script>
+     let indexValue = 1;
+     showImg(indexValue);
+     function currentSlide(n){showImg(indexValue = n);}
+     function plusSlides(n){showImg(indexValue += n);}
+ 
+ 
+     function showImg(n) {
+         let i;
+         let img = document.getElementsByClassName("imagess");
+         let slider = document.getElementsByClassName("dot");
+         if (n > img.length) {
+           indexValue = 1;
+         }
+         if (n < 1) {
+           indexValue = img.length;
+         }
+         for (i = 0; i < img.length; i++) {
+           img[i].style.display = "none";
+         }
+         for (i = 0; i < slider.length; i++) {
+           slider[i].classList.remove("active");
+         }
+       
+         img[indexValue - 1].style.display = "block";
+         slider[indexValue - 1].classList.add("active");
+       }
+ 
+  </script>
+    <br>
+ 
+   </center>
+ 
+   <!-- <div class="con"> 
+    <img class="dish1" src="a1.jpg" alt="itaimg"> <br>
+    <a class="t1" href="kimchi.html">AASHA: HOUSE TO HOPES</a>
+    <p id="aa1">
+    </p>
+    <br> 
+    </div>
+    <br>
+
+    <div class="con"> 
+      <img class="dish2" src="a2.jpg" alt="grkimg"> <br>
+      <a class="t2" href="bulgogi.html">GYAANAALAYA</a>
+      <p id="aa2"></p>
+      <br> 
+      </div>
+      <br>
+
+
+      <div class="con"> 
+       <img class="dish1" src="a3.jpg" alt="itaimg"> <br>
+       <a class="t1" href="bibimbap.html">KHUSHI: INITIATIVE TO SMILE</a>
+       <p id="aa1"></p>
+       <br> 
+    </div>
+    <br>
+
+    <div class="con"> 
+      <img class="dish2" src="a4.jpg" alt="grkimg"> <br>
+      <a class="t2" href="tteokbokki.html">BUDDHA HOUSE OF FAITH</a>
+      <p id="aa2"></p>
+      <br> 
+      </div>
+      <br>
+
+
+      <div class="con"> 
+        <img class="dish1" src="a5.jpg" alt="itaimg"> <br>
+        <a class="t1" href="jajangmyeon.html">GANDHI AASHRAM</a>
+        <p id="aa1"></p>
+        <br> 
+     </div>
+     <br> -->
+
+  </body>
+</html>

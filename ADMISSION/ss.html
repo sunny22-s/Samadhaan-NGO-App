@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+   <title>Food Crush</title>
+   <link rel="stylesheet" href="css/ss.css">
+   <link rel="icon" href="favicon.ico">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lilita+One&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Zeyada&family=Zilla+Slab&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+<body>
+   <center>
+
+   <div class="slideshow-container">
+
+    <div class="imagess fade">
+        <img class="cbg" src="images/ssbg.jpg" style="width:1450px" height="700px">
+        <div class="text1">Swipe to have a<br> look at the<br> TOP 20<br> INTERNATIONAL CUISINES<br>in World's cuisines ranking</div>
+    </div>
+
+
+        <div class="imagess fade">
+            <img class="dishh1" src="a1.jpg" style="width:1450px" height="700px">
+            <div><a class="linkc" href="italian.html">AASHA: HOUSE TO HOPES</a></div>
+            <div class="text2"><p class="abcc">From classic pizzas to refined risottos, renowned for its diverse regional specialties, such as hearty pasta dishes, succulent meats, fresh seafood, and artisanal cheeses, 
+              all prepared with a focus on high-quality, seasonal ingredients and simple yet bold flavors. </p></div>
+        </div>
+
+        <div class="imagess fade">
+            <img class="dishh1" src="a2.jpg" style="width:1450px" height="700px">
+              <div class="text"><a class="linkc" href="greek.html">GYAANAALAYA</a></div>
+               <div class="text2"><p class="abcc">From moussaka to souvlaki to baklava, there's no shortage of delicious and iconic dishes to savor, Greek cuisine never fails to impress us 
+                  with its fresh and flavorful ingredients, as well as its use of traditional cooking techniques. </p></div>
+        </div>
+
+        <div class="imagess fade">
+            <img class="dishh1"  src="a3.jpg" style="width:1450px" height="700px">
+            <div class="text"><a class="linkc" href="spanish.html">KHUSHI: INITIATIVE TO SMILE</a></div>
+                 <div class="text2"><p class="abcc">This cuisine indulges you in the vibrant and diverse flavors from the mouthwatering paella to the heavenly churros con 
+                     chocolate. The flavors of cured ham and fresh seafood, paired with the country's famous wines and sangrias, 
+                        Spain's cuisine is a feast for the senses.</p></div>
+        </div>
+
+        <div class="imagess fade">
+            <img class="dishh1"  src="a4.jpg" style="width:1450px" height="700px">
+            <div class="text"><a class="linkc" href="spanish.html">BUDDHA HOUSE OF FAITH</a></div>
+                 <div class="text2"><p class="abcc">This cuisine indulges you in the vibrant and diverse flavors from the mouthwatering paella to the heavenly churros con 
+                     chocolate. The flavors of cured ham and fresh seafood, paired with the country's famous wines and sangrias, 
+                        Spain's cuisine is a feast for the senses.</p></div>
+        </div>
+
+        <div class="imagess fade">
+            <img class="dishh1"  src="a5.jpg" style="width:1450px" height="700px">
+            <div class="text"><a class="linkc" href="spanish.html">GANDHI AASHRAM</a></div>
+                 <div class="text2"><p class="abcc">This cuisine indulges you in the vibrant and diverse flavors from the mouthwatering paella to the heavenly churros con 
+                     chocolate. The flavors of cured ham and fresh seafood, paired with the country's famous wines and sangrias, 
+                        Spain's cuisine is a feast for the senses.</p></div>
+        </div>
+
+        <br><br>
+
+
+    <div style="text-align:center">
+       <span class="dot" onclick="currentSlide(1)"></span>
+       <span class="dot" onclick="currentSlide(2)"></span>
+       <span class="dot" onclick="currentSlide(3)"></span>
+       <span class="dot" onclick="currentSlide(4)"></span>
+       <span class="dot" onclick="currentSlide(5)"></span>
+       <span class="dot" onclick="currentSlide(6)"></span>
+       <span class="dot" onclick="currentSlide(7)"></span>
+       <span class="dot" onclick="currentSlide(8)"></span>
+       <span class="dot" onclick="currentSlide(9)"></span>
+       <span class="dot" onclick="currentSlide(10)"></span>
+       <span class="dot" onclick="currentSlide(11)"></span>
+       <span class="dot" onclick="currentSlide(12)"></span>
+       <span class="dot" onclick="currentSlide(13)"></span>
+       <span class="dot" onclick="currentSlide(14)"></span>
+       <span class="dot" onclick="currentSlide(15)"></span>
+       <span class="dot" onclick="currentSlide(16)"></span>
+       <span class="dot" onclick="currentSlide(17)"></span>
+       <span class="dot" onclick="currentSlide(18)"></span>
+       <span class="dot" onclick="currentSlide(19)"></span>
+       <span class="dot" onclick="currentSlide(20)"></span>
+       <span class="dot" onclick="currentSlide(21)"></span>
+    </div>
+
+
+    <div class="prev" onclick="plusSlides(-1)"&#10094;>
+       <span class="fas fa-angle-left"></span>
+    </div>
+    <div class="next" onclick="plusSlides(1)"&#10094;>
+       <span class="fas fa-angle-right"></span>
+    </div>
+
+ </div>
+ <script>
+    let indexValue = 1;
+    showImg(indexValue);
+    function currentSlide(n){showImg(indexValue = n);}
+    function plusSlides(n){showImg(indexValue += n);}
+
+
+    function showImg(n) {
+        let i;
+        let img = document.getElementsByClassName("imagess");
+        let slider = document.getElementsByClassName("dot");
+        if (n > img.length) {
+          indexValue = 1;
+        }
+        if (n < 1) {
+          indexValue = img.length;
+        }
+        for (i = 0; i < img.length; i++) {
+          img[i].style.display = "none";
+        }
+        for (i = 0; i < slider.length; i++) {
+          slider[i].classList.remove("active");
+        }
+      
+        img[indexValue - 1].style.display = "block";
+        slider[indexValue - 1].classList.add("active");
+      }
+
+ </script>
+   <br>
+
+  </center>
+
+</body>
+
+
+</html>

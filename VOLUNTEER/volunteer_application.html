@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // JavaScript function to display success message
+        function displaySuccessMessage() {
+            var successBox = document.getElementById('success-box');
+            successBox.style.display = 'block';
+            setTimeout(function () {
+                successBox.style.display = 'none';
+            }, 3000); // Hide success message after 3 seconds
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-side">
+            <img src="vol11.webp" alt="Side Image">
+        </div>
+        <div class="form-side">
+            <div class="header">
+                <h1>Application Form</h1>
+            </div>
+            <div class="form-group">
+                <form id="volunteerForm" action="/save_application" method="post">
+
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="skills">Get Involved in</label>
+                <select id="skills" name="skills" multiple>
+                    <option value="social_media_advertising">Social Media Advertising</option>
+                    <option value="food_distribution">Food Distribution</option>
+                    <option value="administrative_support">Administrative Support</option>
+                    <option value="special_events">Special Events</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="experience">Age</label>
+                <input type="number" id="experience" name="experience" min="0">
+            </div>
+            <div class="button-container">
+                <button type="submit">Sign Up</button>
+            </div>
+            </form>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
